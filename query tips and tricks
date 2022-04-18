@@ -1,0 +1,2 @@
+SQL for ordering by number - 1,2,3,4 etc instead of 1,10,11,12?
+order by len(registration_no), registration_no
