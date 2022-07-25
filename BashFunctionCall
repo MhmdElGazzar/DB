@@ -1,0 +1,3 @@
+Variable=$(functionName)  # directs output to the variable + won't print any echo stmt
+https://www.linuxjournal.com/content/return-values-bash-functions
+https://itecnote.com/tecnote/return-value-in-a-bash-function/
