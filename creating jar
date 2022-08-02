@@ -1,0 +1,16 @@
+packaging jar as an artifact is not that useful 
+cuz it compiles dependencies inside the jar, which makes the size too large 
+alot of upload and download + doesn't reuse any thing from maven although it might have all the dependencies
+
+how to package jar using maven?
+mvn package 
+https://www.youtube.com/watch?v=GIyIWpC5YIw
+
+how to include local maven dependency ?
+<dependency>
+    <groupId>com.sample</groupId>
+    <artifactId>sample</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/Name_Your_JAR.jar</systemPath>
+</dependency>
