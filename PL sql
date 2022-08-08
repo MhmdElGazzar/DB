@@ -1,0 +1,7 @@
+good website
+https://www.tutorialspoint.com/plsql/plsql_procedures.htm
+
+how to create an array parameter to a procedure?
+the only way is: 
+CREATE TYPE var_array  AS varray(200) of  varchar2(20);                              --define array type
+CREATE or replace PROCEDURE reset_business_object_and_logs (list IN  var_array)      --use the new type as procedure in parameter
