@@ -1,0 +1,10 @@
+Just for future reference 
+Error: "resolution will not be reattempted until the update interval of MyRepo has elapsed"
+Answer: What basically happens is,According to default updatePolicy of maven.Maven will fetch the jars from repo on daily basis.So if during 1st attempt your internet was not working then it would not try to fetch this jar again untill 24hours spent.
+resolution: mvn -U clean install
+---------------------------------------------------------------------
+Error: Could not find artifact io.github.mohabmohie:SHAFT_ENGINE:jar:6.3.20220808 in automatest-artifactory
+Answer: old group id 
+resolution: change group id to <groupId>io.github.shafthq</groupId>
+to avoid dependency deletion cuz it consumes time and bandwidth 
+
