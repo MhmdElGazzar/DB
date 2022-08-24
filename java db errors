@@ -1,0 +1,2 @@
+error ORA-00942: table or view does not exist
+solution: add the schema name before table name 
