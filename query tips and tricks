@@ -1,3 +1,15 @@
-SQL for ordering by number - 1,2,3,4 etc instead of 1,10,11,12?
+1) SQL for ordering by number - 1,2,3,4 etc instead of 1,10,11,12?
 order by len(registration_no), registration_no
 src: https://stackoverflow.com/questions/16519648/sql-for-ordering-by-number-1-2-3-4-etc-instead-of-1-10-11-12
+
+2) if u are doing a query that will delete large number of customers 1000+ 
+if the number is big > connection will timeout in deletion 
+1- delete from schemaName.employee  where managerId  IN (1959, 1645) And  ROWNUM <= 1000 ;
+2- delete from schemaName.employee  where empId  IN ( SELECT empId from schemaName.employee  where managerId =  1956 FETCH FIRST 1000 ROWS ONLY) ;
+plus for loop 
+BEGIN  
+  FOR k IN 1..36 LOOP  
+    DBMS_OUTPUT.PUT_LINE(k);  
+  END LOOP;  
+END;  
+commit;
