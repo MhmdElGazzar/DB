@@ -1,0 +1,7 @@
+Math.pow(base, exp);
+
+put an integer in 4 digits format
+String b = String.format("%04d", a);
+
+Arrays class
+https://www.geeksforgeeks.org/array-class-in-java/
