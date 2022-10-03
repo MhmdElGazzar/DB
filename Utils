@@ -5,3 +5,4 @@ String b = String.format("%04d", a);
 
 Arrays class
 https://www.geeksforgeeks.org/array-class-in-java/
+https://www.baeldung.com/java-util-arrays
