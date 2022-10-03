@@ -5,3 +5,7 @@ how to create an array parameter to a procedure?
 the only way is: 
 CREATE TYPE var_array  AS varray(200) of  varchar2(20);                              --define array type
 CREATE or replace PROCEDURE reset_business_object_and_logs (list IN  var_array)      --use the new type as procedure in parameter
+
+how to trim spaces from all column's value?
+update EUUM_UM_TEST.BUSINESS_OBJECT
+set BUSINESS_OBJ_NAME=REPLACE(BUSINESS_OBJ_NAME, '	' , '') WHERE BUSINESS_OBJ_NAME LIKE '%	%' ;
