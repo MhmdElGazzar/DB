@@ -1,1 +1,11 @@
-faker generates a random values 
+faker generates a random values it can use locale and seed
+github: https://github.com/DiUS/java-faker
+The Java Locale class object represents a specific geographic, cultural, or political region. 
+It is a mechanism to for identifying objects, not a container for the objects themselves. 
+A Locale object logically consists of the fields like languages, script, country, variant, extensions.
+   Locale locale = Locale.GERMAN;
+        for (String country : Locale.getISOCountries(Locale.IsoCountryCode.PART1_ALPHA2))
+        {
+            System.out.println(new Locale("", country).getDisplayCountry(locale));
+
+        }
