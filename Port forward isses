@@ -1,0 +1,5 @@
+if you face an issue trying to portforward on something that worked before 
+$ lsof -i:[port number]
+example: lsof -i:8080  => will return a list of the processes usng the port
+$ kill -9 [process id] => kill this process
+
